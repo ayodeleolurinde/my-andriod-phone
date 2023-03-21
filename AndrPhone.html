@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android</title>
+    <style>
+        main{
+            background-image: url(./bs.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 250px;
+            height: 530px;
+            color: black;
+            border-radius: 15px;
+            border: 3px solid aqua;
+            background-color: white;
+            margin: auto;
+            margin-top: 60px;
+        }
+        .nav{
+            background-color:yellowgreen;
+            display: flex;
+            justify-content: end;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            height: 20px;
+        }
+        .go{
+            display: flex;
+            align-items: center;
+        }
+        .img{
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .img:hover{
+            background-color: darkgray;
+        }
+        .divimg{
+            flex-wrap: wrap;
+            margin-top: 120px;
+            display: flex;
+            width: 250px;
+            justify-content: space-between;
+        }
+        .divimg button{
+            background: none;
+            border: none;
+        }
+        .flex img{
+            width: 50px;
+            height: 70px;
+            border-radius: 8px;
+        }
+        .flex {
+            flex-wrap: wrap;
+            width: fit-content;
+            display: flex;
+            height: 500px;
+            justify-content: space-between;
+        }
+        #pics{
+            background-color: white;
+            
+        }
+        h3{
+            text-align: center;
+            font-family: cursive;
+        }
+        .over{
+            overflow: scroll;
+            overflow-x: hidden;
+            height: 425px;
+        }
+        .mess p{
+            margin-left: 10px;
+        }
+        .opt{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .opt button{
+            background: none;
+            border: none;
+            font-size: 20px;
+        }
+        .mesopt {
+    display: flex;
+    justify-content: space-around;
+}
+.mesopt button{
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <div class="go">
+                <i class="icofont-ui-wifi"></i>
+                <i class="icofont-battery-full"></i>
+                <i>100%</i>
+                <p id="time"></p>
+            </div>
+        </div>
+        <p id="mes"></p>
+        <p id="pics"></p>
+        <p id="tim"></p>
+        <div id="imgs" class="divimg">
+            <button><img class="img" src="./android images/chrome.png" alt=""></button>
+            <button><img class="img" src="./android images/compact-camera.png" alt=""></button>
+            <button><img class="img" src="./android images/contact-card.png" alt=""></button>
+            <button><img class="img" src="./android images/facebook-new.png" alt=""></button>
+            <button><img class="img" src="./android images/google-logo.png" alt=""></button>
+            <button><img class="img" src="./android images/telegram-app.png" alt=""></button>
+            <button onclick="pic()"><img class="img" src="./android images/windows-explorer.png" alt=""></button>
+            <button><img class="img" src="./android images/icons8-twitter-48.png" alt=""></button>
+            <button><img class="img" src="./android images/instagram-new.png" alt=""></button>
+            <button onclick="meg()"><img class="img" src="./android images/messages-mac.png" alt=""></button>
+            <button><img class="img" src="./android images/phone.png" alt=""></button>
+            <button><img class="img" src="./android images/tear-off-calendar.png" alt=""></button>
+            <button><img class="img" src="./android images/tiktok.png" alt=""></button>
+            <button><img class="img" src="./android images/whatsapp.png" alt=""></button>
+            <button><img class="img" src="./android images/youtube-play.png" alt=""></button>
+        </div>
+    </main>
+</body>
+</html>
+<script src="AndrPhone.js"></script>
